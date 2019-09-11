@@ -3,4 +3,4 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/76f50633d1824cac9a1c681687a5ad5e)](https://www.codacy.com/manual/zhaow-de/oauth2orize-crossorigin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zhaow-de/oauth2orize-crossorigin&amp;utm_campaign=Badge_Grade)
 [![Depfu](https://badges.depfu.com/badges/0eddb73bfc2dd566c4eeda70c657edaf/count.svg)](https://depfu.com/github/zhaow-de/oauth2orize-crossorigin?project_id=9066)
 
-# oauth2orize-crossorigin
+# @zhaow-de/oauth2orize-crossorigin
