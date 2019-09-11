@@ -1,13 +1,8 @@
-/* global describe, it */
+const pkg = require('..');
+const expect = require('chai').expect;
 
-var pkg = require('..');
-var expect = require('chai').expect;
-
-
-describe('oauth2orize-crossorigin', function() {
-  
-  it('should export hello world', function() {
-    expect(pkg.hello).to.equal('world');
+describe('oauth2orize-crossorigin', () => {
+  it('should export extensions', () => {
+    expect(pkg.extensions).to.be.an('function');
   });
-  
 });
