@@ -1,6 +1,6 @@
 {
   "name": "@zhaow-de/oauth2orize-crossorigin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "author": {
     "name": "Jared Hanson",
@@ -22,6 +22,7 @@
     }
   ],
   "main": "./lib",
+  "dependencies": {},
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.0.6",
