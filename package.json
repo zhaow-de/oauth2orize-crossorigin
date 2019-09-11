@@ -1,11 +1,18 @@
 {
-  "name": "oauth2orize-crossorigin",
-  "version": "0.0.0",
+  "name": "@zhaow-de/oauth2orize-crossorigin",
+  "version": "0.0.1",
   "description": "",
   "author": {
     "name": "Jared Hanson",
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zhaow-de/oauth2orize-crossorigin.git"
+  },
+  "bugs": {
+    "url": "http://github.com/zhaow-de/oauth2orize-crossorigin/issues"
   },
   "license": "MIT",
   "licenses": [
@@ -16,11 +23,33 @@
   ],
   "main": "./lib",
   "devDependencies": {
-    "make-node": "^0.3.0",
-    "mocha": "^2.0.0",
-    "chai": "^3.0.0"
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "make-node": "^0.4.6",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2"
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "nyc": {
+    "include": "lib",
+    "exclude": "test"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha test/*.test.js"
+    "test": "nyc --reporter=html --reporter=text mocha test/*.test.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   }
 }
